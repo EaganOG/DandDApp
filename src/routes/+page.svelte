@@ -16,11 +16,20 @@
         "Baldur's Gate 1"
     ];
 
+    let armour = [];
+
+    async function fetchData() {
+        const response = await fetch('localhost:3000/api/armour');
+        const data = await response.json();
+        console.log(data);
+    }
+
     function handleSelection(event) {
         selectedVersion = event.target.value;
     }
 
     onMount(() => {
+        fetchData();
         showPopup = true;
     });
 </script>
@@ -41,11 +50,15 @@
     {/if}
 
     {#if !showPopup}
-        <div>
-            <h1>Welcome to the Dungeons and Dragons App</h1>
-            <p>Click on the button below to get started</p>
-            <a href="/{selectedVersion}" class="btn">Create Character</a>
-        </div>
+        {#each armour as item}
+            <div>
+                <h2>{item.name}</h2>
+                <p>{item.type}</p>
+                <p>{item.rarity}</p>
+                <p>{item.effect1}</p>
+                <p>{item.effect2}</p>
+            </div>
+        {/each}
     {/if}
 </main>
 
