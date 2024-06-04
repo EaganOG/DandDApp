@@ -49,7 +49,9 @@
       <p>Selected Version: {selectedVersion}</p>
       <button on:click={() => (showPopup = false)}>Get Started</button>
     </div>
-  {/if};
+  {/if}
+
+  <!-- Test -->
 </main>
 
 <style>
