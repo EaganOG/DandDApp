@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import BG3Races from "../routes/+page.js";
 
   let selectedVersion = "";
   let showPopup = false;
@@ -53,24 +54,34 @@
 
   <section id="CharCreation">
     <input type="text" id="CharacterName" placeholder="Character Name" />
-    
+
+    <select id="Helm">
+      <option value="1">1</option>
+    </select>
+    <select id="Chest">
+      <option value="1">1</option>
+    </select>
+    <select id="Boots">
+      <option value="1">1</option>
+    </select>
+    <select id="Hands">
+      <option value="1">1</option>
+    </select>
+    <select id="Cape">
+      <option value="1">1</option>
+    </select>
+
+    <div id="CharacterPreview">
+      <select id="CharacterRace">
+        {#each BG3Races as BG3Races}
+          <option value={BG3Races.name}>{BG3Races.name}</option>
+        {/each}
+      <img src="./Character.png" alt="Character Preview" />
+    </div>
+
 
   </section>
-  <select id="Helm">
-    <option value="1">1</option>
-  </select>
-  <select id="Chest">
-    <option value="1">1</option>
-  </select>
-  <select id="Boots">
-    <option value="1">1</option>
-  </select>
-  <select id="Hands">
-    <option value="1">1</option>
-  </select>
-  <select id="Cape">
-    <option value="1">1</option>
-  </select>
+  
 </main>
 
 <style>
