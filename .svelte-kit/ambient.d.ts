@@ -26,10 +26,8 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const ADSK_3DSMAX_x64_2024: string;
 	export const ALLUSERSPROFILE: string;
 	export const APPDATA: string;
-	export const CARBON_MEM_DISABLE: string;
 	export const ChocolateyInstall: string;
 	export const ChocolateyLastPathUpdate: string;
 	export const CHROME_CRASHPAD_PIPE_NAME: string;
@@ -44,11 +42,9 @@ declare module '$env/static/private' {
 	export const FPS_BROWSER_APP_PROFILE_STRING: string;
 	export const FPS_BROWSER_USER_PROFILE_STRING: string;
 	export const GIT_ASKPASS: string;
-	export const GOPATH: string;
 	export const HOME: string;
 	export const HOMEDRIVE: string;
 	export const HOMEPATH: string;
-	export const HOMESHARE: string;
 	export const INIT_CWD: string;
 	export const LANG: string;
 	export const LOCALAPPDATA: string;
@@ -79,8 +75,7 @@ declare module '$env/static/private' {
 	export const NPM_PREFIX_NPM_CLI_JS: string;
 	export const NUMBER_OF_PROCESSORS: string;
 	export const OneDrive: string;
-	export const OneDriveCommercial: string;
-	export const OneDriveOP: string;
+	export const OneDriveConsumer: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
 	export const OS: string;
 	export const Path: string;
@@ -94,7 +89,6 @@ declare module '$env/static/private' {
 	export const ProgramW6432: string;
 	export const PROMPT: string;
 	export const PSModulePath: string;
-	export const PT8HOME: string;
 	export const PUBLIC: string;
 	export const SESSIONNAME: string;
 	export const SystemDrive: string;
@@ -103,19 +97,15 @@ declare module '$env/static/private' {
 	export const TERM_PROGRAM: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const TMP: string;
-	export const UATDATA: string;
-	export const USERDNSDOMAIN: string;
 	export const USERDOMAIN: string;
 	export const USERDOMAIN_ROAMINGPROFILE: string;
 	export const USERNAME: string;
 	export const USERPROFILE: string;
-	export const VBOX_MSI_INSTALL_PATH: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
 	export const VSCODE_INJECTION: string;
-	export const VSCODE_NONCE: string;
 	export const windir: string;
 	export const ZES_ENABLE_SYSMAN: string;
 }
@@ -149,10 +139,8 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		ADSK_3DSMAX_x64_2024: string;
 		ALLUSERSPROFILE: string;
 		APPDATA: string;
-		CARBON_MEM_DISABLE: string;
 		ChocolateyInstall: string;
 		ChocolateyLastPathUpdate: string;
 		CHROME_CRASHPAD_PIPE_NAME: string;
@@ -167,11 +155,9 @@ declare module '$env/dynamic/private' {
 		FPS_BROWSER_APP_PROFILE_STRING: string;
 		FPS_BROWSER_USER_PROFILE_STRING: string;
 		GIT_ASKPASS: string;
-		GOPATH: string;
 		HOME: string;
 		HOMEDRIVE: string;
 		HOMEPATH: string;
-		HOMESHARE: string;
 		INIT_CWD: string;
 		LANG: string;
 		LOCALAPPDATA: string;
@@ -202,8 +188,7 @@ declare module '$env/dynamic/private' {
 		NPM_PREFIX_NPM_CLI_JS: string;
 		NUMBER_OF_PROCESSORS: string;
 		OneDrive: string;
-		OneDriveCommercial: string;
-		OneDriveOP: string;
+		OneDriveConsumer: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
 		OS: string;
 		Path: string;
@@ -217,7 +202,6 @@ declare module '$env/dynamic/private' {
 		ProgramW6432: string;
 		PROMPT: string;
 		PSModulePath: string;
-		PT8HOME: string;
 		PUBLIC: string;
 		SESSIONNAME: string;
 		SystemDrive: string;
@@ -226,19 +210,15 @@ declare module '$env/dynamic/private' {
 		TERM_PROGRAM: string;
 		TERM_PROGRAM_VERSION: string;
 		TMP: string;
-		UATDATA: string;
-		USERDNSDOMAIN: string;
 		USERDOMAIN: string;
 		USERDOMAIN_ROAMINGPROFILE: string;
 		USERNAME: string;
 		USERPROFILE: string;
-		VBOX_MSI_INSTALL_PATH: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
 		VSCODE_GIT_IPC_HANDLE: string;
 		VSCODE_INJECTION: string;
-		VSCODE_NONCE: string;
 		windir: string;
 		ZES_ENABLE_SYSMAN: string;
 		[key: `PUBLIC_${string}`]: undefined;

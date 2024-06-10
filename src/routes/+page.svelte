@@ -51,7 +51,26 @@
     </div>
   {/if}
 
-  <!-- Test -->
+  <section id="CharCreation">
+    <input type="text" id="CharacterName" placeholder="Character Name" />
+    
+
+  </section>
+  <select id="Helm">
+    <option value="1">1</option>
+  </select>
+  <select id="Chest">
+    <option value="1">1</option>
+  </select>
+  <select id="Boots">
+    <option value="1">1</option>
+  </select>
+  <select id="Hands">
+    <option value="1">1</option>
+  </select>
+  <select id="Cape">
+    <option value="1">1</option>
+  </select>
 </main>
 
 <style>
