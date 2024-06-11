@@ -1,69 +1,34 @@
 <script>
-  import { onMount } from "svelte";
-
-  let selectedVersion = "";
-  let showPopup = false;
-
-  const versions = [
-    "Dungeons & Dragons 5th Edition",
-    "Dungeons & Dragons 4th Edition",
-    "Dungeons & Dragons 3.5 Edition",
-    "Dungeons & Dragons 3rd Edition",
-    "Dungeons & Dragons 2nd Edition",
-    "Advanced Dungeons & Dragons 1st Edition",
-    "Baldur's Gate 3",
-    "Baldur's Gate 2",
-    "Baldur's Gate 1",
-  ];
-
-  function handleSelection(event) {
-    selectedVersion = event.target.value;
-  }
-
-  onMount(() => {
-    showPopup = true;
-  });
+  import LoadPopUp from "../lib/LoadPopUp.svelte";
+  import {chest, helmet, boots, gloves} from "../lib/gameItems.mjs";
 </script>
 
 <main>
-  {#if showPopup}
-    <div class="popup">
-      <h1>Version Select</h1>
-      <select on:change={handleSelection}>
-        {#each versions as version}
-          <option value={version}>{version}</option>
-        {/each}
-      </select>
-      <img
-        class="DragonsLogo"
-        src="./DnD-Logo.png"
-        alt="Dungeons and Dragons"
-      />
-      <p>Selected Version: {selectedVersion}</p>
-      <button on:click={() => (showPopup = false)}>Get Started</button>
-    </div>
-  {/if}
-
   <section id="CharCreation">
     <input type="text" id="CharacterName" placeholder="Character Name" />
 
-    <select id="Helm">
-      <option value="1">1</option>
-    </select>
-    <select id="Chest">
-      <option value="1">1</option>
-    </select>
-    <select id="Boots">
-      <option value="1">1</option>
-    </select>
-    <select id="Hands">
-      <option value="1">1</option>
-    </select>
-    <select id="Cape">
-      <option value="1">1</option>
-    </select>
-
-
+    <section id="ArmourPicker">
+      <select id="Helm">
+        {#each helmet as item}
+          <option value={item.ID}>{item.Name}</option>
+        {/each}
+      </select>
+      <select id="Chest">
+        {#each chest as item}
+          <option value={item.ID}>{item.Name}</option>
+        {/each}
+      </select>
+      <select id="Boots">
+        {#each boots as item}
+          <option value={item.ID}>{item.Name}</option>
+        {/each}
+      </select>
+      <select id="Hands">
+        {#each gloves as item}
+          <option value={item.ID}>{item.Name}</option>
+        {/each}
+      </select>
+    </section>
   </section>
   
 </main>
@@ -77,7 +42,6 @@
 
   main {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -109,6 +73,14 @@
     right: 0;
     padding-right: 10%;
     padding-bottom: 3%;
+  }
+
+  #ArmourPicker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
   }
 
   @keyframes fadeIn {
