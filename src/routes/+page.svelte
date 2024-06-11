@@ -1,6 +1,5 @@
 <script>
   import { onMount } from "svelte";
-  import BG3Races from "../routes/+page.js";
 
   let selectedVersion = "";
   let showPopup = false;
@@ -17,18 +16,11 @@
     "Baldur's Gate 1",
   ];
 
-  async function fetchData() {
-    const response = await fetch("127.0.0.1:5000/api/armour");
-    const data = await response.json();
-    console.log(data);
-  }
-
   function handleSelection(event) {
     selectedVersion = event.target.value;
   }
 
   onMount(() => {
-    fetchData();
     showPopup = true;
   });
 </script>
@@ -70,14 +62,6 @@
     <select id="Cape">
       <option value="1">1</option>
     </select>
-
-    <div id="CharacterPreview">
-      <select id="CharacterRace">
-        {#each BG3Races as BG3Races}
-          <option value={BG3Races.name}>{BG3Races.name}</option>
-        {/each}
-      <img src="./Character.png" alt="Character Preview" />
-    </div>
 
 
   </section>
