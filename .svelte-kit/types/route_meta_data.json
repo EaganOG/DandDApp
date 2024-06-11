@@ -1,6 +1,4 @@
 {
-	"/": [
-		"src/routes/+page.js"
-	],
+	"/": [],
 	"/login": []
 }

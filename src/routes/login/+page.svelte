@@ -29,7 +29,7 @@
     }
 </script>
 
-<form on:submit|preventDefault={handleSubmit}>
+<form id="loginForm" on:submit|preventDefault={handleSubmit}>
     <label for="email">Email:</label>
     <input type="email" id="email" bind:value={email} required on:input={validateEmail}>
     {#if emailError}
@@ -47,8 +47,15 @@
 
 <style>
     form{
-        position:sticky;
-        
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 300px;
+        margin: 0 auto;
+    }
 
+    form p{
+        margin: 0;
+        color: var(--error-color);
     }
 </style>

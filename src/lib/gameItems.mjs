@@ -16,7 +16,8 @@ export let chest = [
         Effect2: "+1 DEX",
         Value: 10,
         AC: 11,
-        Proficiency: "Light Armour"
+        Proficiency: "Light Armour",
+        Image: "static/armour1.png"
     },
     {
         ID: 2,
@@ -26,7 +27,8 @@ export let chest = [
         Effect2: "+1 DEX",
         Value: 50,
         AC: 13,
-        Proficiency: "Light Armour"
+        Proficiency: "Light Armour",
+        Image: "static/armour2.png"
     },
     {
         ID: 3,
@@ -36,7 +38,8 @@ export let chest = [
         Effect2: "+1 DEX",
         Value: 45,
         AC: 12,
-        Proficiency: "Light Armour"
+        Proficiency: "Light Armour",
+        Image: "static/armour3.png"
     },
     {
         ID: 4,
@@ -46,7 +49,8 @@ export let chest = [
         Effect2: "+1 DEX",
         Value: 5,
         AC: 11,
-        Proficiency: "Light Armour"
+        Proficiency: "Light Armour",
+        Image: "static/armour4.png"
     },
     {
         ID: 5,
@@ -56,7 +60,8 @@ export let chest = [
         Effect2: "+1 DEX",
         Value: 10,
         AC: 12,
-        Proficiency: "Medium Armour"
+        Proficiency: "Medium Armour",
+        Image: "static/armour5.png"
     },
     {
         ID: 6,
@@ -66,7 +71,8 @@ export let chest = [
         Effect2: "None",
         Value: 75,
         AC: 16,
-        Proficiency: "Medium Armour"
+        Proficiency: "Medium Armour",
+        Image: "static/armour6.png"
     },
     {
         ID: 7,
@@ -76,7 +82,8 @@ export let chest = [
         Effect2: "None",
         Value: 50,
         AC: 14,
-        Proficiency: "Medium Armour"
+        Proficiency: "Medium Armour",
+        Image: "static/armour7.png"
     },
     {
         ID: 8,
@@ -86,7 +93,8 @@ export let chest = [
         Effect2: "+1 DEX",
         Value: 400,
         AC: 14,
-        Proficiency: "Medium Armour"
+        Proficiency: "Medium Armour",
+        Image: "static/armour8.png"
     }
 ];
 

@@ -1,6 +1,7 @@
 <script>
   import LoadPopUp from "../lib/LoadPopUp.svelte";
   import {chest, helmet, boots, gloves} from "../lib/gameItems.mjs";
+  import {races} from "../lib/playableRaces.mjs";
 </script>
 
 <main>
@@ -29,11 +30,23 @@
         {/each}
       </select>
     </section>
+
+    <section id="raceSelect">
+      <select>
+        {#each races as item}
+          <option>{item.name}</option>
+        {/each}
+      </select>
+    </section>
   </section>
   
 </main>
 
 <style>
+  :root{
+    --error-color: #ff0000;
+  }
+
   * {
     margin: 0px;
     padding: 0px;
