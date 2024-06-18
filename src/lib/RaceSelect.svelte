@@ -3,19 +3,37 @@
 
   let selectedRace = "";
   let selectedSubrace = "";
+  let selectedRaceImage = {};
+  let selectedSubraceImage = {};
+  let hasSubrace = false;
 
   function handleRaceChange(event) {
     selectedRace = event.target.value;
+    hasSubrace = false;
+    selectedRaceImage = races.find((item) => item.name === selectedRace);
+    console.log(selectedRaceImage?.Image);
+    console.log(hasSubrace);
   }
 
   function handleSubraceChange(event) {
     selectedSubrace = event.target.value;
+    hasSubrace = true;
+    selectedSubraceImage = selectedRaceImage.subraces.find(
+      (item) => item.name === selectedSubrace
+    );
+    console.log(selectedSubraceImage?.Image);
+    console.log(hasSubrace);
   }
 </script>
 
 <link rel="stylesheet" href="src/routes/styles.css" />
 
 <main>
+  {#if hasSubrace === false}
+    <img src={selectedRaceImage?.Image} alt={selectedRaceImage?.name} />
+  {:else}
+    <img src={selectedSubraceImage?.Image} alt={selectedSubraceImage?.name} />
+  {/if}
   <section id="raceSelect">
     <select bind:value={selectedRace} on:change={handleRaceChange}>
       <option value="">Select a race...</option>

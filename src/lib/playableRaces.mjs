@@ -127,6 +127,7 @@ export let races = [
   {
     name: "Githyanki",
     subraces: [],
+    Image: "src/lib/RaceImages/gith.jpg",
   },
   {
     name: "Dragonborn",

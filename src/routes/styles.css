@@ -64,18 +64,30 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    height: 30%;
   }
+
+  #CharacterName{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #CreationContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
   main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     font-family: Arial, sans-serif;
   }
 
   select {
-    padding: 10px;
     font-size: 16px;
     margin-bottom: 20px;
   }
