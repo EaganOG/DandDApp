@@ -1,122 +1,216 @@
-:root{
-    --primary-color: #29dd61;
-    --secondary-color: #501913;
-    --error-code: #ff0000;
+:root {
+  --primary-color: #066e79;
+  --secondary-color: #edd8a0;
+  --error-code: #ff0000;
+
+  --race-image-height: 500px;
+  --race-image-width: 300px;
+  --select-element-width: (var(--race-image-width) - 50px);
+  --select-element-height: (var(var(--race-image-height)) - 100px);
+  --select-element-font-size: 20px;
+  --select-font-weight: bolder;
+}
+.oswald-font {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Oswald";
+}
+
+.armour {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  max-height: var(--select-element-height);
+  max-width: var(--select-element-width);
+}
+
+#ArmourDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--secondary-color);
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#RaceDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: var(--race-image-width);
+  height: var(--race-image-height);
+}
+
+#RaceDisplay img {
+  max-height: var(--race-image-height);
+  max-width: var(--race-image-width);
+}
+
+#raceSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#raceSelect select {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  max-width: var(--select-element-width);
+  max-height: var(--select-element-height);
+}
+
+#RaceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+  border: 1px solid var(--secondary-color);
+}
+
+#ArmourDisplay img {
+  width: 75px;
+  height: 75px;
+  margin: auto;
+}
+
+#ArmourPicker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#ArmourPicker select {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  width: 275px;
+  height: 60px;
+}
+
+#ArmourPicker select option {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  width: 275px;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+#CharCreation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 30%;
+}
+
+#CharacterName {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 2.5px solid var(--secondary-color);
+  font-weight: bolder;
+}
+
+#CreationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#CharStats {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-height: var(--select-element-height);
+  max-width: var(--select-element-width);
+}
+
+#CharStats div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: flex-start;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding: 3%;
+}
+
+#CharStats label {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+#CharStats input {
+  font-size: 18px;
+  max-width: 50px;
+  right: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+select {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.popup {
+  animation: fadeIn 1s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.DragonsLogo {
+  max-width: 30%;
+  max-height: 50%;
+  position: absolute;
+  right: 0;
+  padding-right: 10%;
+  padding-bottom: 3%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+  100% {
+    opacity: 1;
   }
-
-  .armour {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  #ArmourDisplay {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--secondary-color);
-    padding: 10px;
-  }
-
-  #ArmourDisplay img {
-    width: 50px;
-    height: 50px;
-    margin: auto;
-  }
-
-  #ArmourPicker {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #ArmourPicker select {
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    width: 200px;
-    height: 40px;
-  }
-
-  #ArmourPicker select option {
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    width: 200px;
-    height: 40px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-  }
-
-  #CharCreation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    height: 30%;
-  }
-
-  #CharacterName{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    #CreationContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-  main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, sans-serif;
-  }
-
-  select {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
-  .popup {
-    animation: fadeIn 1s;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  }
-
-  .DragonsLogo {
-    max-width: 30%;
-    max-height: 50%;
-    position: absolute;
-    right: 0;
-    padding-right: 10%;
-    padding-bottom: 3%;
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+}

@@ -1,5 +1,6 @@
 <script>
   import ArmourSelect from "$lib/ArmourSelect.svelte";
+  import CharStats from "$lib/CharStats.svelte";
   import RaceSelect from "$lib/RaceSelect.svelte";
   import LoadPopUp from "../lib/LoadPopUp.svelte";
   import { races } from "../lib/playableRaces.mjs";
@@ -13,6 +14,7 @@
     <div id="CharCreation">
       <ArmourSelect />
       <RaceSelect />
+      <CharStats />
     </div>
   </section>
 </main>

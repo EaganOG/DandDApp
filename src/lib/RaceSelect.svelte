@@ -28,12 +28,16 @@
 
 <link rel="stylesheet" href="src/routes/styles.css" />
 
-<main>
-  {#if hasSubrace === false}
-    <img src={selectedRaceImage?.Image} alt={selectedRaceImage?.name} />
-  {:else}
-    <img src={selectedSubraceImage?.Image} alt={selectedSubraceImage?.name} />
-  {/if}
+<div id="RaceContainer">
+  <section id="RaceDisplay">
+    {#if hasSubrace === false && selectedRaceImage}
+      <img src={selectedRaceImage?.Image} alt={selectedRaceImage?.name} />
+    {:else if hasSubrace === true}
+      <img src={selectedSubraceImage?.Image} alt={selectedSubraceImage?.name} />
+    {:else}
+      <img src={races[1].Image} alt="Placeholder" />
+    {/if}
+  </section>
   <section id="raceSelect">
     <select bind:value={selectedRace} on:change={handleRaceChange}>
       <option value="">Select a race...</option>
@@ -55,4 +59,4 @@
       {/each}
     {/if}
   </section>
-</main>
+</div>
