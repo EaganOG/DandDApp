@@ -1,43 +1,19 @@
 <script>
+  import ArmourPicker from "$lib/ArmourPicker.svelte";
+  import CharStats from "$lib/CharStats.svelte";
+  import RacePicker from "$lib/RacePicker.svelte";
   import LoadPopUp from "../lib/LoadPopUp.svelte";
-  import {chest, helmet, boots, gloves} from "../lib/gameItems.mjs";
-  import {races} from "../lib/playableRaces.mjs";
 </script>
 
 <main>
   <section id="CharCreation">
     <input type="text" id="CharacterName" placeholder="Character Name" />
 
-    <section id="ArmourPicker">
-      <select id="Helm">
-        {#each helmet as item}
-          <option value={item.ID}>{item.Name}</option>
-        {/each}
-      </select>
-      <select id="Chest">
-        {#each chest as item}
-          <option value={item.ID}>{item.Name}</option>
-        {/each}
-      </select>
-      <select id="Boots">
-        {#each boots as item}
-          <option value={item.ID}>{item.Name}</option>
-        {/each}
-      </select>
-      <select id="Hands">
-        {#each gloves as item}
-          <option value={item.ID}>{item.Name}</option>
-        {/each}
-      </select>
-    </section>
-
-    <section id="raceSelect">
-      <select>
-        {#each races as item}
-          <option>{item.name}</option>
-        {/each}
-      </select>
-    </section>
+    <div id="CharPickers">
+      <ArmourPicker />
+      <RacePicker />
+      <CharStats />
+    </div>
   </section>
   
 </main>
@@ -57,8 +33,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
   }
 
   select {
@@ -94,6 +68,20 @@
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
+  }
+
+  #CharacterName {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 200px;
+    margin-left: 35%;
+  }
+
+  #CharPickers {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
   }
 
   @keyframes fadeIn {
