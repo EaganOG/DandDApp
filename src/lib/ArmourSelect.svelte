@@ -41,7 +41,7 @@
 
 <link rel="stylesheet" href="src/routes/styles.css" />
 
-<main>
+<main id="ArmourMain">
   <div class="armour">
     <section id="ArmourDisplay">
       <div id="HelmetDisplay">

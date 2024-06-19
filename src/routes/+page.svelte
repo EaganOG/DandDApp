@@ -1,6 +1,7 @@
 <script>
   import ArmourSelect from "$lib/ArmourSelect.svelte";
   import CharStats from "$lib/CharStats.svelte";
+  import ClassSelect from "$lib/ClassSelect.svelte";
   import RaceSelect from "$lib/RaceSelect.svelte";
   import LoadPopUp from "../lib/LoadPopUp.svelte";
   import { races } from "../lib/playableRaces.mjs";
@@ -8,7 +9,7 @@
 
 <link rel="stylesheet" href="src\routes\styles.css" />
 
-<main>
+<main id="HomeMain">
   <section id="CreationContainer">
     <input type="text" id="CharacterName" placeholder="Character Name" />
     <div id="CharCreation">

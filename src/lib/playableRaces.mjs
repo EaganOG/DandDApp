@@ -91,6 +91,7 @@ export let races = [
   {
     name: "Half-Orc",
     subraces: [],
+    Image: "src/lib/RaceImages/halforc.jpg",
   },
   {
     name: "Tiefling",
