@@ -5,6 +5,9 @@
   import RaceSelect from "$lib/RaceSelect.svelte";
   import LoadPopUp from "../lib/LoadPopUp.svelte";
   import { races } from "../lib/playableRaces.mjs";
+
+  export let item;
+  console.log(item);
 </script>
 
 <link rel="stylesheet" href="src\routes\styles.css" />

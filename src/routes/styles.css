@@ -1,4 +1,50 @@
+/* */
+
+/* Global Variables and Styles */
+
+:root {
+  /* Site Variables */
+  --primary-color: #066e79;
+  --secondary-color: #edd8a0;
+  --error-code: #ff0000;
+
+  --race-image-height: 700px;
+  --race-image-width: 400px;
+  --select-element-width: (var(--race-image-width) - 50px);
+  --select-element-height: (var(var(--race-image-height)) - 100px);
+  --select-element-font-size: 20px;
+  --select-font-weight: bolder;
+
+  --background-image-url: url("src/lib/logo/Site-Background.png");
+}
+
+* {
+  /* Global Styles */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Oswald";
+}
+
+.oswald-font {
+  /* Custom Site Font */
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+select {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Navigation Menu Styles */
+
 nav {
+  /* Navigation Bar Container */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,28 +57,14 @@ nav {
   margin-left: 10px;
 }
 
-#HomeMain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-@keyframes navSlideIn {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 nav br {
+  /* The Break between the rest of the options and the Login option */
   display: block;
   padding-bottom: 25px;
 }
 
 nav ul {
+  /* The style for the list of navigation options */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,6 +73,7 @@ nav ul {
 }
 
 nav ul li {
+  /* Navigation options styles */
   font-size: var(--select-element-font-size);
   font-weight: var(--select-font-weight);
   margin: 10px;
@@ -48,10 +81,12 @@ nav ul li {
 }
 
 nav ul li a {
+  /* removes underline from nav options */
   text-decoration: none;
 }
 
 #checkbox-container {
+  /* Navigation menu button container */
   width: fit-content;
   height: fit-content;
   padding: 10px;
@@ -59,6 +94,7 @@ nav ul li a {
 }
 
 .dropdown-menu {
+  /* Container holding the list of navigation options */
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -67,17 +103,18 @@ nav ul li a {
 }
 
 .dropdown-menu img {
+  /* Logo for the Navigation Menu */
   width: 100px;
-  height: 70px;
-  left: 50%;
-  right: 50%;
+  height: 75px;
 }
 
 #dropdown {
+  /* Disables the Naviation dropdown by default */
   display: none;
 }
 
 .toggle {
+  /* Container for the overall Menu toggle button */
   position: relative;
   width: 40px;
   height: 40px;
@@ -91,6 +128,7 @@ nav ul li a {
 }
 
 .menu-bar {
+  /* Class to set the default length of the lines in the button */
   width: 100%;
   height: 4px;
   background-color: var(--secondary-color);
@@ -98,6 +136,7 @@ nav ul li a {
 }
 
 #menu-bar-2 {
+  /* Bar 2 Animation Time */
   transition-duration: 0.8s;
 }
 
@@ -136,33 +175,64 @@ nav ul li a {
   transform: rotate(180deg);
 }
 
-:root {
-  --primary-color: #066e79;
-  --secondary-color: #edd8a0;
-  --error-code: #ff0000;
-
-  --race-image-height: 700px;
-  --race-image-width: 400px;
-  --select-element-width: (var(--race-image-width) - 50px);
-  --select-element-height: (var(var(--race-image-height)) - 100px);
-  --select-element-font-size: 20px;
-  --select-font-weight: bolder;
-}
-.oswald-font {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+@keyframes navSlideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  font-family: "Oswald";
+/* Spell Page Styles */
+
+#SpellsMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+#SpellsHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#SpellsHeader h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 20px;
+}
+
+#SpellsHeader p {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 20px;
+}
+
+#SpellsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  text-align: center;
+}
+
+#SpellsContainer div {
+  flex: 0 0 calc(20% - 50px);
+  height: max-content;
+  padding-bottom: 15px;
+}
+
+#SpellsContainer ul {
+  list-style: none;
+}
+
+/* Armour Selection Styles */
 
 .armour {
   display: flex;
@@ -179,45 +249,6 @@ nav ul li a {
   border: 2px solid var(--secondary-color);
   padding: 10px;
 }
-
-#RaceDisplay {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: var(--race-image-width);
-  height: var(--race-image-height);
-}
-
-#RaceDisplay img {
-  max-height: var(--race-image-height);
-  max-width: var(--race-image-width);
-  padding: 20px;
-}
-
-#raceSelect {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#raceSelect select {
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 20px;
-  max-width: var(--select-element-width);
-  max-height: var(--select-element-height);
-}
-
-#RaceContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--secondary-color);
-}
-
 #ArmourDisplay img {
   width: 125px;
   height: 125px;
@@ -257,33 +288,47 @@ nav ul li a {
   text-align: top;
 }
 
-#CharCreation {
-  display: flex;
-  flex-direction: row; /* Ensure components are in a row */
-  justify-content: center; /* Center components horizontally */
-  align-items: center; /* Center components vertically */
-  gap: 20px; /* Adjust spacing between components */
-}
+/* Race Selection Styles */
 
-#CharacterName {
-  margin: 10px;
-  padding: 10px;
-  border: 2px solid var(--secondary-color);
-  font-weight: bold;
-  font-size: 18px;
-  max-width: 300px;
-  text-align: center;
-}
-
-#CreationContainer {
+#RaceDisplay {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center children horizontally */
-  justify-content: center; /* Center children vertically */
-  text-align: center; /* Center text within the container */
-  max-width: 800px; /* Adjust as necessary */
-  margin-top: -80px;
+  align-items: center;
+  justify-content: center;
+  width: var(--race-image-width);
+  height: var(--race-image-height);
 }
+
+#RaceDisplay img {
+  max-height: var(--race-image-height);
+  max-width: var(--race-image-width);
+  padding: 20px;
+}
+
+#raceSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#raceSelect select {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  max-width: var(--select-element-width);
+  max-height: var(--select-element-height);
+}
+
+#RaceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--secondary-color);
+}
+
+/* Character Stats Picker Styles */
 
 #CharStats {
   display: flex;
@@ -320,10 +365,44 @@ nav ul li a {
   width: max-content;
 }
 
-select {
-  font-size: 16px;
-  margin-bottom: 20px;
+/* Home Page Overall Styles */
+
+#HomeMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+#CharCreation {
+  display: flex;
+  flex-direction: row; /* Ensure components are in a row */
+  justify-content: center; /* Center components horizontally */
+  align-items: center; /* Center components vertically */
+  gap: 20px; /* Adjust spacing between components */
+}
+
+#CharacterName {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid var(--secondary-color);
+  font-weight: bold;
+  font-size: 18px;
+  max-width: 300px;
+  text-align: center;
+}
+
+#CreationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  text-align: center; /* Center text within the container */
+  max-width: 800px; /* Adjust as necessary */
+  margin-top: -80px;
+}
+
+/* Welcome Screen Pop Up Styles */
 
 .popup {
   animation: fadeIn 1s;

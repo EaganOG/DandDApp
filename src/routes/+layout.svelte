@@ -34,6 +34,7 @@
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/stats">Stats</a></li>
+      <li><a href="/Spells">Spells</a></li>
     </ul>
     <br />
     <ul>
