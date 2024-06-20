@@ -10,7 +10,7 @@
   console.log(item);
 </script>
 
-<link rel="stylesheet" href="src\routes\styles.css" />
+<link rel="stylesheet" href="src\lib\styles.css" />
 
 <main id="HomeMain">
   <section id="CreationContainer">

@@ -32,6 +32,7 @@ declare module '$env/static/private' {
 	export const CARBON_MEM_DISABLE: string;
 	export const ChocolateyInstall: string;
 	export const ChocolateyLastPathUpdate: string;
+	export const CHROME_CRASHPAD_PIPE_NAME: string;
 	export const COLOR: string;
 	export const COLORTERM: string;
 	export const CommonProgramFiles: string;
@@ -40,6 +41,8 @@ declare module '$env/static/private' {
 	export const ComSpec: string;
 	export const DriverData: string;
 	export const EDITOR: string;
+	export const FPS_BROWSER_APP_PROFILE_STRING: string;
+	export const FPS_BROWSER_USER_PROFILE_STRING: string;
 	export const GIT_ASKPASS: string;
 	export const GOPATH: string;
 	export const HOME: string;
@@ -152,6 +155,7 @@ declare module '$env/dynamic/private' {
 		CARBON_MEM_DISABLE: string;
 		ChocolateyInstall: string;
 		ChocolateyLastPathUpdate: string;
+		CHROME_CRASHPAD_PIPE_NAME: string;
 		COLOR: string;
 		COLORTERM: string;
 		CommonProgramFiles: string;
@@ -160,6 +164,8 @@ declare module '$env/dynamic/private' {
 		ComSpec: string;
 		DriverData: string;
 		EDITOR: string;
+		FPS_BROWSER_APP_PROFILE_STRING: string;
+		FPS_BROWSER_USER_PROFILE_STRING: string;
 		GIT_ASKPASS: string;
 		GOPATH: string;
 		HOME: string;

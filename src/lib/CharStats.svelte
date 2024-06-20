@@ -2,7 +2,7 @@
   import { characterStatistics } from "../lib/characterstatistics.mjs";
 </script>
 
-<link rel="stylesheet" href="src/routes/styles.css" />
+<link rel="stylesheet" href="src\lib\styles.css" />
 
 <main>
   <section id="CharStats">

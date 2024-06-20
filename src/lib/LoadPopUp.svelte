@@ -25,6 +25,8 @@
   });
 </script>
 
+<link rel="stylesheet" href="src\lib\styles.css" />
+
 <main>
     {#if showPopup}
     <div class="popup">
