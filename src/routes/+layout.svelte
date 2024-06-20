@@ -18,7 +18,9 @@
   </div>
 
   <div id="logo">
-    <img src="src\lib\logo\logo-trans-text.PNG" alt="Logo" />
+    <a href="/">
+      <img src="src\lib\logo\logo-trans-text.PNG" alt="Logo" />
+    </a>
   </div>
 
   <div id="dungeonslogo">

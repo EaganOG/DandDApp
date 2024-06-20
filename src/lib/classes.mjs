@@ -1,4 +1,4 @@
-let classes = [
+export let classes = [
   {
     ID: 1,
     Name: "Barbarian",

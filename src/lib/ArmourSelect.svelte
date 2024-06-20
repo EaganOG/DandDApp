@@ -1,7 +1,7 @@
 <script>
   import { chest, helmet, boots, gloves } from "../lib/gameItems.mjs";
 
-  let selectedHelmet = ""; // Default selected helmet ID
+  let selectedHelmet = "6567567567556756756756765765757756756765756756767"; // Default selected helmet ID
   let selectChest = ""; // Default selected chest ID
   let selectBoots = ""; // Default selected boots ID
   let selectGloves = ""; // Default selected gloves ID
@@ -13,28 +13,28 @@
   function selectedHelm(event) {
     selectedHelmet = event.target.value;
     console.log(selectedHelmet);
-    helmetDisplay = helmet.find((item) => item.ID === Number(selectedHelmet));
+    helmetDisplay = helmet.find((item) => item.Name === selectedHelmet);
     console.log(helmetDisplay?.Image);
   }
 
   function selectedChest(event) {
     selectChest = event.target.value;
     console.log(selectChest);
-    chestDisplay = chest.find((item) => item.ID === Number(selectChest));
+    chestDisplay = chest.find((item) => item.Name === selectChest);
     console.log(chestDisplay?.Image);
   }
 
   function selectedBoots(event) {
     selectBoots = event.target.value;
     console.log(selectBoots);
-    bootsDisplay = boots.find((item) => item.ID === Number(selectBoots));
+    bootsDisplay = boots.find((item) => item.Name === selectBoots);
     console.log(bootsDisplay?.Image);
   }
 
   function selectedGloves(event) {
     selectGloves = event.target.value;
     console.log(selectGloves);
-    glovesDisplay = gloves.find((item) => item.ID === Number(selectGloves));
+    glovesDisplay = gloves.find((item) => item.Name === selectGloves);
     console.log(glovesDisplay?.Image);
   }
 </script>
@@ -77,22 +77,22 @@
     <section id="ArmourPicker">
       <select id="Helm" bind:value={selectedHelmet} on:change={selectedHelm}>
         {#each helmet as item}
-          <option value={item.ID}>{item.Name}</option>
+          <option value={item.Name}>{item.Name}</option>
         {/each}
       </select>
       <select id="Chest" bind:value={selectChest} on:change={selectedChest}>
         {#each chest as item}
-          <option value={item.ID}>{item.Name}</option>
+          <option value={item.Name}>{item.Name}</option>
         {/each}
       </select>
       <select id="Hands" bind:value={selectGloves} on:change={selectedGloves}>
         {#each gloves as item}
-          <option value={item.ID}>{item.Name}</option>
+          <option value={item.Name}>{item.Name}</option>
         {/each}
       </select>
       <select id="Boots" bind:value={selectBoots} on:change={selectedBoots}>
         {#each boots as item}
-          <option value={item.ID}>{item.Name}</option>
+          <option value={item.Name}>{item.Name}</option>
         {/each}
       </select>
     </section>

@@ -18,7 +18,10 @@
     <div id="CharCreation">
       <ArmourSelect />
       <RaceSelect />
-      <CharStats />
+      <div>
+        <CharStats />
+        <ClassSelect />
+      </div>
     </div>
   </section>
 </main>
