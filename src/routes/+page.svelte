@@ -65,7 +65,8 @@ select {
   font-size: 16px;
   margin-bottom: 20px;
 }
-  #HomeMain {
+
+#HomeMain {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,10 +75,10 @@ select {
 
 #CharCreation {
   display: flex;
-  flex-direction: row; /* Ensure components are in a row */
-  justify-content: center; /* Center components horizontally */
-  align-items: center; /* Center components vertically */
-  gap: 20px; /* Adjust spacing between components */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 #CharacterName {
@@ -93,10 +94,25 @@ select {
 #CreationContainer {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center children horizontally */
-  justify-content: center; /* Center children vertically */
-  text-align: center; /* Center text within the container */
-  max-width: 800px; /* Adjust as necessary */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 800px;
   margin-top: -80px;
+}
+
+@media screen and (max-width: 768px) {
+  #CharCreation {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #CharacterName {
+    max-width: 100%;
+  }
+
+  #CreationContainer {
+    margin-top: -40px;
+  }
 }
 </style>

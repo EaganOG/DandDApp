@@ -12,9 +12,23 @@
 
 
 <select bind:value={selectedClass} on:change={handleClassChange} id="ClassSelect">
+    <option value="">Select a class...</option>
     {#each classes as dungeonClass}
         <option value={dungeonClass.Name}>{dungeonClass.Name}</option>
     {/each}
+</select>
+
+<select id="SubclassSelect">
+    <option value="">Select a subclass...</option>
+    {#if selectedClass}
+        {#each classes as dungeonClass}
+            {#if dungeonClass.Name === selectedClass && dungeonClass.Subclasses && dungeonClass.Subclasses.length > 0}
+                {#each dungeonClass.Subclasses as subclass}
+                    <option value={subclass.Name}>{subclass.Name}</option>
+                {/each}
+            {/if}
+        {/each}
+    {/if}
 </select>
 
 <style>

@@ -56,48 +56,48 @@
     <p>{passwordError}</p>
   {/if}
 
-  <button type="submit">Login</button>
+  <button id="LoginButton" type="submit">Login</button>
 </form>
 
 <style>
   :root {
-  /* Site Variables */
-  --primary-color: #066e79;
-  --secondary-color: #edd8a0;
-  --error-code: #ff0000;
+    /* Site Variables */
+    --primary-color: #066e79;
+    --secondary-color: #edd8a0;
+    --error-code: #ff0000;
 
-  --race-image-height: 700px;
-  --race-image-width: 400px;
-  --select-element-width: (var(--race-image-width) - 50px);
-  --select-element-height: (var(var(--race-image-height)) - 100px);
-  --select-element-font-size: 20px;
-  --select-font-weight: bolder;
+    --race-image-height: 700px;
+    --race-image-width: 400px;
+    --select-element-width: (var(--race-image-width) - 50px);
+    --select-element-height: (var(var(--race-image-height)) - 100px);
+    --select-element-font-size: 20px;
+    --select-font-weight: bolder;
 
-  --background-image-url: url("src/lib/logo/Site-Background.png");
-}
+    --background-image-url: url("src/lib/logo/Site-Background.png");
+  }
 
-* {
-  /* Global Styles */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  font-family: "Oswald";
-}
+  * {
+    /* Global Styles */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: "Oswald";
+  }
 
-.oswald-font {
-  /* Custom Site Font */
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+  .oswald-font {
+    /* Custom Site Font */
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-select {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
+  select {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 
   form {
     display: flex;
@@ -110,5 +110,15 @@ select {
   form p {
     margin: 0;
     color: var(--error-color);
+  }
+
+  #LoginButton{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
   }
 </style>

@@ -60,7 +60,8 @@ select {
   font-size: 16px;
   margin-bottom: 20px;
 }
-  #CharStats {
+
+#CharStats {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -93,6 +94,24 @@ select {
   right: 100%;
   height: max-content;
   width: max-content;
+}
+
+@media (max-width: 768px) {
+  #CharStats div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #CharStats label {
+    font-size: 24px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  #CharStats input {
+    font-size: 16px;
+    max-width: 100%;
+  }
 }
 
 </style>

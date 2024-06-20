@@ -75,6 +75,7 @@
 
     <section id="ArmourPicker">
       <select id="Helm" bind:value={selectedHelmet} on:change={selectedHelm}>
+        <option value="">Select a helmet...</option>
         {#each helmet as item}
           <option value={item.Name}>{item.Name}</option>
         {/each}
@@ -188,5 +189,36 @@ select {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   text-align: top;
+}
+
+@media only screen and (max-width: 768px) {
+  #ArmourPicker select {
+    width: 100%;
+  }
+  
+  #ArmourMain {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #ArmourDisplay img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #ArmourPicker select {
+    font-size: 16px;
+    margin-bottom: 40px;
+    width: 250px;
+    height: 50px;
+  }
+  
+  #ArmourPicker select option {
+    font-size: 16px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 80px;
+  }
 }
 </style>

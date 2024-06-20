@@ -88,136 +88,163 @@ select {
 }
 
   nav {
-  /* Navigation Bar Container */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  border: 1px solid var(--secondary-color);
-  width: 125px;
-  position: fixed;
-  animation-name: navSlideIn;
-  animation-duration: 0.5s;
-  margin-left: 10px;
-}
+    /* Navigation Bar Container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid var(--secondary-color);
+    width: 125px;
+    position: fixed;
+    animation-name: navSlideIn;
+    animation-duration: 0.5s;
+    margin-left: 10px;
+  }
 
-nav br {
-  /* The Break between the rest of the options and the Login option */
-  display: block;
-  padding-bottom: 25px;
-}
+  nav br {
+    /* The Break between the rest of the options and the Login option */
+    display: block;
+    padding-bottom: 25px;
+  }
 
-nav ul {
-  /* The style for the list of navigation options */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  list-style: none;
-}
+  nav ul {
+    /* The style for the list of navigation options */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+  }
 
-nav ul li {
-  /* Navigation options styles */
-  font-size: var(--select-element-font-size);
-  font-weight: var(--select-font-weight);
-  margin: 10px;
-  padding-left: 20px;
-}
+  nav ul li {
+    /* Navigation options styles */
+    font-size: var(--select-element-font-size);
+    font-weight: var(--select-font-weight);
+    margin: 10px;
+    padding-left: 20px;
+  }
 
-nav ul li a {
-  /* removes underline from nav options */
-  text-decoration: none;
-}
+  nav ul li a {
+    /* removes underline from nav options */
+    text-decoration: none;
+  }
 
-#checkbox-container {
-  /* Navigation menu button container */
-  width: fit-content;
-  height: fit-content;
-  padding: 10px;
-  border: 1px solid var(--secondary-color);
-}
+  #checkbox-container {
+    /* Navigation menu button container */
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+  }
 
-.dropdown-menu {
-  /* Container holding the list of navigation options */
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+  .dropdown-menu {
+    /* Container holding the list of navigation options */
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.dropdown-menu img {
-  /* Logo for the Navigation Menu */
-  width: 100px;
-  height: 75px;
-}
+  .dropdown-menu img {
+    /* Logo for the Navigation Menu */
+    width: 100px;
+    height: 75px;
+  }
 
-#dropdown {
-  /* Disables the Navigation dropdown by default */
-  display: none;
-}
+  #dropdown {
+    /* Disables the Navigation dropdown by default */
+    display: none;
+  }
 
-.toggle {
-  /* Container for the overall Menu toggle button */
-  position: relative;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 10px;
-  transition-duration: 0.5s;
-}
+  .toggle {
+    /* Container for the overall Menu toggle button */
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: 0.5s;
+  }
 
-.menu-bar {
-  /* Class to set the default length of the lines in the button */
-  width: 100%;
-  height: 4px;
-  background-color: var(--secondary-color);
-  border-radius: 4px;
-}
+  .menu-bar {
+    /* Class to set the default length of the lines in the button */
+    width: 100%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+  }
 
-#menu-bar-2 {
-  /* Bar 2 Animation Time */
-  transition-duration: 0.8s;
-}
+  #menu-bar-2 {
+    /* Bar 2 Animation Time */
+    transition-duration: 0.8s;
+  }
 
-#menu-bar-1 {
-  width: 50%;
-}
+  #menu-bar-1 {
+    width: 50%;
+  }
 
-#menu-bar-2 {
-  width: 75%;
-}
+  #menu-bar-2 {
+    width: 75%;
+  }
 
-#dropdown:checked + .toggle .menu-bar {
-  position: absolute;
-  transition-duration: 0.5s;
-}
+  #dropdown:checked + .toggle .menu-bar {
+    position: absolute;
+    transition-duration: 0.5s;
+  }
 
-#dropdown:checked + .toggle #menu-bar-2 {
-  transform: scaleX(0);
-  transition-duration: 0.1s;
-}
+  #dropdown:checked + .toggle #menu-bar-2 {
+    transform: scaleX(0);
+    transition-duration: 0.1s;
+  }
 
-#dropdown:checked + .toggle #menu-bar-1 {
-  width: 100%;
-  transform: rotate(45deg);
-  transition-duration: 0.5s;
-}
+  #dropdown:checked + .toggle #menu-bar-1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
+  }
 
-#dropdown:checked + .toggle #menu-bar-3 {
-  width: 100%;
-  transform: rotate(-45deg);
-  transition-duration: 0.5s;
-}
+  #dropdown:checked + .toggle #menu-bar-3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: 0.5s;
+  }
 
-#dropdown:checked + .toggle {
-  transition-duration: 0.5s;
-  transform: rotate(180deg);
-}
+  #dropdown:checked + .toggle {
+    transition-duration: 0.5s;
+    transform: rotate(180deg);
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #DropdownContainer{
+      position: fixed;
+    }
+
+
+    nav {
+      width: 25%;
+      margin-left: 10px;
+    }
+
+    nav ul li {
+      font-size: 16px;
+      padding-left: 10px;
+    }
+
+    .dropdown-menu {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .dropdown-menu img {
+      display: none;
+    }
+  }
 
 @keyframes navSlideIn {
   0% {

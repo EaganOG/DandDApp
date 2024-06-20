@@ -93,46 +93,64 @@
   font-weight: 400;
   font-style: normal;
 }
+  select {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 
-select {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
   #RaceDisplay {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: var(--race-image-width);
-  height: var(--race-image-height);
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--race-image-width);
+    height: var(--race-image-height);
+  }
 
-#RaceDisplay img {
-  max-height: var(--race-image-height);
-  max-width: var(--race-image-width);
-  padding: 20px;
-}
+  #RaceDisplay img {
+    max-height: var(--race-image-height);
+    max-width: var(--race-image-width);
+    padding: 20px;
+  }
 
-#raceSelect {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  #raceSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-#raceSelect select {
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 20px;
-  max-width: var(--select-element-width);
-  max-height: var(--select-element-height);
-}
+  #raceSelect select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: var(--select-element-width);
+    max-height: var(--select-element-height);
+  }
 
-#RaceContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--secondary-color);
-}
+  #RaceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--secondary-color);
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #RaceDisplay {
+      width: 100%;
+      height: auto;
+    }
+
+    #RaceDisplay img {
+      max-width: 100%;
+      max-height: auto;
+    }
+
+    #raceSelect select {
+      max-width: 100%;
+      max-height: auto;
+    }
+  }
 </style>
