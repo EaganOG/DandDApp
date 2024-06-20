@@ -17,7 +17,7 @@ export let chest = [
     Value: 10,
     AC: 11,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/armour1.png",
+    Image: "/ArmourImages/armour1.png",
   },
   {
     ID: 2,
@@ -28,7 +28,7 @@ export let chest = [
     Value: 50,
     AC: 13,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/armour2.png",
+    Image: "/ArmourImages/armour2.png",
   },
   {
     ID: 3,
@@ -39,7 +39,7 @@ export let chest = [
     Value: 45,
     AC: 12,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/armour3.png",
+    Image: "/ArmourImages/armour3.png",
   },
   {
     ID: 4,
@@ -50,7 +50,7 @@ export let chest = [
     Value: 5,
     AC: 11,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/armour4.png",
+    Image: "/ArmourImages/armour4.png",
   },
   {
     ID: 5,
@@ -61,7 +61,7 @@ export let chest = [
     Value: 10,
     AC: 12,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/armour5.png",
+    Image: "/ArmourImages/armour5.png",
   },
   {
     ID: 6,
@@ -72,7 +72,7 @@ export let chest = [
     Value: 75,
     AC: 16,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/armour6.png",
+    Image: "/ArmourImages/armour6.png",
   },
   {
     ID: 7,
@@ -83,7 +83,7 @@ export let chest = [
     Value: 50,
     AC: 14,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/armour7.png",
+    Image: "/ArmourImages/armour7.png",
   },
   {
     ID: 8,
@@ -94,7 +94,7 @@ export let chest = [
     Value: 400,
     AC: 14,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/armour8.png",
+    Image: "/ArmourImages/armour8.png",
   },
 ];
 
@@ -109,7 +109,7 @@ export let helmet = [
     Value: 10,
     AC: 11,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/helmet1.png",
+    Image: "/ArmourImages/helmet1.png",
   },
   {
     ID: 2,
@@ -120,7 +120,7 @@ export let helmet = [
     Value: 50,
     AC: 13,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/helmet2.png",
+    Image: "/ArmourImages/helmet2.png",
   },
   {
     ID: 3,
@@ -131,7 +131,7 @@ export let helmet = [
     Value: 45,
     AC: 12,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/helmet3.png",
+    Image: "/ArmourImages/helmet3.png",
   },
   {
     ID: 4,
@@ -142,7 +142,7 @@ export let helmet = [
     Value: 5,
     AC: 11,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/helmet4.png",
+    Image: "/ArmourImages/helmet4.png",
   },
   {
     ID: 5,
@@ -153,7 +153,7 @@ export let helmet = [
     Value: 10,
     AC: 12,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/helmet5.png",
+    Image: "/ArmourImages/helmet5.png",
   },
   {
     ID: 6,
@@ -164,7 +164,7 @@ export let helmet = [
     Value: 75,
     AC: 16,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/helmet6.png",
+    Image: "/ArmourImages/helmet6.png",
   },
   {
     ID: 7,
@@ -175,7 +175,7 @@ export let helmet = [
     Value: 50,
     AC: 14,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/helmet7.png",
+    Image: "/ArmourImages/helmet7.png",
   },
   {
     ID: 8,
@@ -186,7 +186,7 @@ export let helmet = [
     Value: 400,
     AC: 14,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/helmet8.png",
+    Image: "/ArmourImages/helmet8.png",
   },
 ];
 
@@ -201,7 +201,7 @@ export let boots = [
     Value: 10,
     AC: 11,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/boots1.png",
+    Image: "/ArmourImages/boots1.png",
   },
   {
     ID: 2,
@@ -212,7 +212,7 @@ export let boots = [
     Value: 50,
     AC: 13,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/boots2.png",
+    Image: "/ArmourImages/boots2.png",
   },
   {
     ID: 3,
@@ -223,7 +223,7 @@ export let boots = [
     Value: 45,
     AC: 12,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/boots3.png",
+    Image: "/ArmourImages/boots3.png",
   },
   {
     ID: 4,
@@ -234,7 +234,7 @@ export let boots = [
     Value: 5,
     AC: 11,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/boots4.png",
+    Image: "/ArmourImages/boots4.png",
   },
   {
     ID: 5,
@@ -245,7 +245,7 @@ export let boots = [
     Value: 10,
     AC: 12,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/boots5.png",
+    Image: "/ArmourImages/boots5.png",
   },
   {
     ID: 6,
@@ -256,7 +256,7 @@ export let boots = [
     Value: 75,
     AC: 16,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/boots6.png",
+    Image: "/ArmourImages/boots6.png",
   },
   {
     ID: 7,
@@ -267,7 +267,7 @@ export let boots = [
     Value: 50,
     AC: 14,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/boots7.png",
+    Image: "/ArmourImages/boots7.png",
   },
   {
     ID: 8,
@@ -278,7 +278,7 @@ export let boots = [
     Value: 400,
     AC: 14,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/boots8.png",
+    Image: "/ArmourImages/boots8.png",
   },
 ];
 
@@ -293,7 +293,7 @@ export let gloves = [
     Value: 10,
     AC: 11,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/gloves1.png",
+    Image: "/ArmourImages/gloves1.png",
   },
   {
     ID: 2,
@@ -304,7 +304,7 @@ export let gloves = [
     Value: 50,
     AC: 13,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/gloves2.png",
+    Image: "/ArmourImages/gloves2.png",
   },
   {
     ID: 3,
@@ -315,7 +315,7 @@ export let gloves = [
     Value: 45,
     AC: 12,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/gloves3.png",
+    Image: "/ArmourImages/gloves3.png",
   },
   {
     ID: 4,
@@ -326,7 +326,7 @@ export let gloves = [
     Value: 5,
     AC: 11,
     Proficiency: "Light Armour",
-    Image: "src/lib/ArmourImages/gloves4.png",
+    Image: "/ArmourImages/gloves4.png",
   },
   {
     ID: 5,
@@ -337,7 +337,7 @@ export let gloves = [
     Value: 10,
     AC: 12,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/gloves5.png",
+    Image: "/ArmourImages/gloves5.png",
   },
   {
     ID: 6,
@@ -348,7 +348,7 @@ export let gloves = [
     Value: 75,
     AC: 16,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/gloves6.png",
+    Image: "/ArmourImages/gloves6.png",
   },
   {
     ID: 7,
@@ -359,7 +359,7 @@ export let gloves = [
     Value: 50,
     AC: 14,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/gloves7.png",
+    Image: "/ArmourImages/gloves7.png",
   },
   {
     ID: 8,
@@ -370,6 +370,6 @@ export let gloves = [
     Value: 400,
     AC: 14,
     Proficiency: "Medium Armour",
-    Image: "src/lib/ArmourImages/gloves8.png",
+    Image: "/ArmourImages/gloves8.png",
   },
 ];

@@ -39,7 +39,6 @@
   }
 </script>
 
-<link rel="stylesheet" href="src\lib\styles.css" />
 
 <main id="ArmourMain">
   <div class="armour">
@@ -98,3 +97,96 @@
     </section>
   </div>
 </main>
+
+<style>
+  :root {
+  /* Site Variables */
+  --primary-color: #066e79;
+  --secondary-color: #edd8a0;
+  --error-code: #ff0000;
+
+  --race-image-height: 700px;
+  --race-image-width: 400px;
+  --select-element-width: (var(--race-image-width) - 50px);
+  --select-element-height: (var(var(--race-image-height)) - 100px);
+  --select-element-font-size: 20px;
+  --select-font-weight: bolder;
+
+  --background-image-url: url("src/lib/logo/Site-Background.png");
+}
+
+* {
+  /* Global Styles */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Oswald";
+}
+
+.oswald-font {
+  /* Custom Site Font */
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+select {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+  .armour {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#ArmourDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--secondary-color);
+  padding: 10px;
+}
+#ArmourDisplay img {
+  width: 125px;
+  height: 125px;
+  margin: auto;
+}
+
+#ArmourPicker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+#ArmourPicker select {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 70px;
+  width: 300px;
+  height: 60px;
+  border: 1px solid var(--secondary-color);
+}
+
+#ArmourMain {
+  margin-left: -240px;
+}
+
+#ArmourPicker select option {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  height: 60px;
+  width: 100px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: top;
+}
+</style>

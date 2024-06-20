@@ -63,7 +63,6 @@
   }
 </script>
 
-<link rel="stylesheet" href="src/routes/styles.css" />
 
 <main id="SpellsMain">
   <section id="SpellsHeader">
@@ -256,3 +255,53 @@
     </div>
   </section>
 </main>
+
+
+<style>
+  #SpellsMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#SpellsHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#SpellsHeader h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 20px;
+}
+
+#SpellsHeader p {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 20px;
+}
+
+#SpellsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  text-align: center;
+}
+
+#SpellsContainer div {
+  flex: 0 0 calc(20% - 50px);
+  height: max-content;
+  padding-bottom: 15px;
+}
+
+#SpellsContainer ul {
+  list-style: none;
+}
+
+</style>
